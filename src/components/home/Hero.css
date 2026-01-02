@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  padding: 140px 120px;
+  gap: 100px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, #ffffff, transparent 60%),
+    radial-gradient(circle at bottom right, #edd8c8, transparent 60%);
+  z-index: -1;
+}
+
+.tag {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  color: var(--primary);
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  margin: 24px 0;
+}
+
+.hero-content p {
+  max-width: 460px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 36px;
+  box-shadow: 0 50px 90px rgba(0,0,0,.18);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--accent), #f5d77a);
+  padding: 16px 36px;
+  border-radius: 40px;
+  font-weight: 500;
+}

@@ -1,0 +1,123 @@
+/* HEADER */
+.premium-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 22px 48px;
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(14px);
+
+  transition: all 0.3s ease;
+}
+
+/* SHRINK ON SCROLL */
+.premium-header.shrink {
+  padding: 14px 48px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* LOGO */
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: #111;
+  white-space: nowrap;
+}
+
+/* NAV */
+.premium-header nav {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* NAV LINKS */
+.premium-header nav a {
+  margin-left: 28px;
+  font-size: 15px;
+  color: #111;
+  text-decoration: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* UNDERLINE HOVER */
+.premium-header nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 1px;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+.premium-header nav a:hover::after {
+  width: 100%;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 24px;
+  height: 2px;
+  background: #111;
+  margin: 4px 0;
+}
+
+/* MOBILE */
+@media (max-width: 992px) {
+  .premium-header {
+    padding: 18px 20px;
+  }
+
+  .premium-header.shrink {
+    padding: 12px 20px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .premium-header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(14px);
+
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .premium-header nav.open {
+    max-height: 300px;
+  }
+
+  .premium-header nav a {
+    margin: 18px 0;
+    font-size: 16px;
+  }
+}
