@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import './About.css'
 
-export default function About() {
+export default function   About() {
   return (
        <section className="about-section">
       <motion.div
@@ -43,7 +43,7 @@ export default function About() {
         {/* RIGHT IMAGE */}
         <div className="about-image">
           <img
-            src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3"
+            src="/images/8.webp"
             alt="Handcrafted Wedding Work"
           />
         </div>

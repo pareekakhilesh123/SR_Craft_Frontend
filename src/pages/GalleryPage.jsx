@@ -2,14 +2,19 @@ import { motion } from "framer-motion";
 import "./gallery-page.css";
 
 const images = [
-  "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3",
-  "https://images.unsplash.com/photo-1606800052052-a08af7148866",
-  "https://images.unsplash.com/photo-1529634894861-8f5e7b9d79c1",
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed",
-  "https://images.unsplash.com/photo-1526045612212-70caf35c14df",
-  "https://images.unsplash.com/photo-1508672019048-805c876b67e2",
-  "https://images.unsplash.com/photo-1511285560929-80b456fea0bc",
-  "https://images.unsplash.com/photo-1519741497674-611481863552",
+  "/images/1.webp",
+  "/images/2.webp",
+  "/images/3.webp",
+  "/images/4.webp",
+  "/images/5.webp",
+  "/images/6.webp",
+  "/images/7.webp",
+  "/images/8.webp",
+  "/images/9.webp",
+  "/images/10.webp",
+  "/images/11.webp",
+  "/images/12.webp",
+ 
   
 ];
 

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import "./Header.css";
+ 
 
 export default function Header() {
   const headerRef = useRef(null);
@@ -21,7 +22,9 @@ export default function Header() {
 
   return (
     <header ref={headerRef} className="premium-header">
-      <div className="logo">SR Craft</div>
+      <div className="logo">
+       <img src="/logo/white.png" alt="Logo" style={{width:"48px"}} />
+      </div>
 
       <nav className={menuOpen ? "open" : ""}>
         <Link to="/">Home</Link>

@@ -31,7 +31,7 @@ export default function Hero() {
       </motion.div>
 
       <motion.img
-        src="https://images.unsplash.com/photo-1606800052052-a08af7148866"
+        src="/images/10.webp"
         className="hero-img"
         initial={{ scale: 0.92, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
